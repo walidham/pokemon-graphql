@@ -59,15 +59,15 @@ const App = () => {
 
       <SearchBox
         onSearchHandler={onSearchChange}
-        placeHolder={"Search monster"}
+        placeHolder={"Search pokemon"}
         className={"monsters-search-box"}
       />
       <div>
-        <button onClick={handlePrevClick} disabled={(currentIndex===0)}>Previous</button>
-        <label>
+        <button className="pagination-button" onClick={handlePrevClick} disabled={(currentIndex===0)}>Previous</button>
+        <label className="pagination">
           {currentIndex}/{totalPages}
         </label>
-        <button onClick={handleNextClick} disabled={(currentIndex===totalPages)}>Next</button>
+        <button className="pagination-button" onClick={handleNextClick} disabled={(currentIndex===totalPages)}>Next</button>
       </div>
       <br></br>
       <CardList pokemons={filteredPokemons.slice(currentIndex*20,currentIndex*20+20)} />

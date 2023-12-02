@@ -20,3 +20,13 @@ body {
   color: #0ccac4;
   font-family: 'Bigelow Rules';
 }
+
+.pagination{
+  background-color: #95dada;
+  margin: 50px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pagination-button{
+  background-color: #95dada;
+}
